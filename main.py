@@ -155,7 +155,8 @@ my_bool=(word1 not in sentence) or (word2 not in sentence)
 
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
-
+num1=input("Give me a number please")
+num2=input("Give me one more number please")
 # "num1 is greater than num2"
 
 # "num2 is greater than num1"
@@ -169,8 +170,9 @@ my_bool=(word1 not in sentence) or (word2 not in sentence)
 # f"{num1} is greater than {num2}"
 # "num2 is greater than num1"
 # "num1 and num2 are equal"
-
-
+print(f"{num1} is greater than {num2}")
+print(f"{num2} is greather than {num1}")
+print(f"{num1} is equal to {num2}")
 # Decision Making Practice #2
 # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
 
@@ -185,12 +187,11 @@ my_bool=(word1 not in sentence) or (word2 not in sentence)
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
 age = 16
 has_license = False
+if age >=18 and has_license = True:
+  print("you can drive")
+else:
+  print("You can't drive yet.")
 
-"You can drive"
-
-"You can't drive yet. You must be 18 years old and have a license"
-
-"You can't drive. You need to have a license"
 
 # Decision Making Practice #3
 # To access a certain job, the candidate must be able to program in Python and speak French.
