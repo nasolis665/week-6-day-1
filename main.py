@@ -94,19 +94,28 @@ print(my_bool)
 
 
 ##############################logical operators##################################################
+# logical operators lesson
+my_bool=(55==10)and(5==2*3)
+print(my_bool)
 
+my_bool=1==10 or 3==3
+print(my_bool)
 
+text="this sentence is short"
+my_bool=('sentence' in text) and ('short' in text)
+print(my_bool)
 # Logical Operators Practice #1
 # Create three variables (num1, num2, and num3):
 
 # Inside num1, store the value 36
-
+num1=36
 # Inside num2, stores the result of the operation 72/2
-
+num2=72/2
 # Inside num3, store the value 48
-
+num3=48
 # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
-
+my_bool=num1>num2 and num1<num3
+print(my_bool)
 
 
 
@@ -114,14 +123,14 @@ print(my_bool)
 # Create three variables (num1, num2, and num3):
 
 # Inside num1, store the value 36
-
+num1 = 36
 # Inside num2, stores the result of the operation 72/2
-
+num2=72/2
 # Inside num3, store the value 48
-
+num3=48
 # Check if num1 is greater than num2, or less than num3. Store the result of that comparison in a variable called my_bool.
-
-
+my_bool=num1>num2 or num1<num3
+print(my_bool)
 
 # Logical Operators Practice #3
 # Check if the words:
@@ -133,8 +142,10 @@ print(my_bool)
 # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
 
 # "When something is important enough, you do it even if the odds are against you" - Elon Musk
-
-
+word1 = "success"
+word2 = "technology"
+sentence="When something is important enough, you do it even if the odds are against you"
+my_bool=(word1 not in sentence) or (word2 not in sentence)
 
 
 
