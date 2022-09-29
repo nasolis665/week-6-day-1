@@ -1,239 +1,280 @@
-# fork the repl.it and create a new git hub repo entitled 
-#Comparison operators
-# Logical operators
-# Decision making
-# loops(for loops, while loops, range, enumerator)
-# min/max practice
-# Random in python
-# List comprehension
-
-
-# review practice
-# Append the value of current to the end of the list seconds Please use the list.append() method to do that.
-
-
-seconds = [1.23, 1.45, 1.02]
-current = 1.11
-seconds.append(current)
-print(seconds)
-# Remove item 1.45 from seconds.
-seconds = [1.23, 1.45, 1.02, 1.11]
-seconds.remove(1.45)
-print(seconds)
-
-# Remove items 1.45, 1.02, and 1.11 from seconds.
-seconds = [1.23, 1.45, 1.02, 1.11]
-second = seconds[0]
-print(second)
-
-
-################################comparison operators#########################
-#remember....
-# > greater
-# < less
-# >= greater or equal
-# <= less or equal
-# == equal
-# != different or not equal to
-
-my_bool=10==20
-print(my_bool)
-
-my_bool = 5+5==10 -0
-print(my_bool)
+# # fork the repl.it and create a new git hub repo entitled 
+# #Comparison operators
+# # Logical operators
+# # Decision making
+# # loops(for loops, while loops, range, enumerator)
+# # min/max practice
+# # Random in python
+# # List comprehension
+
+
+# # review practice
+# # Append the value of current to the end of the list seconds Please use the list.append() method to do that.
+
+
+# seconds = [1.23, 1.45, 1.02]
+# current = 1.11
+# seconds.append(current)
+# print(seconds)
+# # Remove item 1.45 from seconds.
+# seconds = [1.23, 1.45, 1.02, 1.11]
+# seconds.remove(1.45)
+# print(seconds)
+
+# # Remove items 1.45, 1.02, and 1.11 from seconds.
+# seconds = [1.23, 1.45, 1.02, 1.11]
+# second = seconds[0]
+# print(second)
+
+
+# ################################comparison operators#########################
+# #remember....
+# # > greater
+# # < less
+# # >= greater or equal
+# # <= less or equal
+# # == equal
+# # != different or not equal to
+
+# my_bool=10==20
+# print(my_bool)
+
+# my_bool = 5+5==10 -0
+# print(my_bool)
+
+# my_bool='white' == 'White'.lower()
+# print(my_bool)
+
+# my_bool= 4<5 and 5>6
+# print(my_bool)
+# # Comparison Operators Practice 1:
+# # ask the user for their age
+# # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+# age=int(input("How old are you?"))
+# if age >= 18 and age <= 21:
+#   print("You can vote")
+# else:
+#   print("Better luck next time")
+
+
+
+# # Comparison Operators Practice  2:
+# # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
+# num1=36
+# num2=17
+# my_bool=num1 >= num2
+# print(my_bool)
+
+
+# # Comparison Operators Practice  3:
+# # Create two variables (num1 and num2):
+# # Inside num1, store the result of the square root of 25
+# # Inside num2, store the number 5.
+# # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
+# import math
+# num1=math.sqrt(25)
+# num2=5
+# my_bool=num1==num2
+# print(my_bool)
+
+# # Comparison Operators Practice #4:
+# # Create two variables (num1 and num2):
+
+# # Inside num1, store the result of 64 x 3
+# num1=64*3
+# # Inside num2, store the result of 24 x 8
+# num2=24*8
+# # Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
+# my_bool=num1==num2
+# print(my_bool)
+
+
+# ##############################logical operators##################################################
+# # logical operators lesson
+# my_bool=(55==10)and(5==2*3)
+# print(my_bool)
+
+# my_bool=1==10 or 3==3
+# print(my_bool)
+
+# text="this sentence is short"
+# my_bool=('sentence' in text) and ('short' in text)
+# print(my_bool)
+# # Logical Operators Practice #1
+# # Create three variables (num1, num2, and num3):
+
+# # Inside num1, store the value 36
+# num1=36
+# # Inside num2, stores the result of the operation 72/2
+# num2=72/2
+# # Inside num3, store the value 48
+# num3=48
+# # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
+# my_bool=num1>num2 and num1<num3
+# print(my_bool)
+
+
+
+# # # Logical Operators Practice #2
+# # # Create three variables (num1, num2, and num3):
+
+# # # Inside num1, store the value 36
+# # num1 = 36
+# # # Inside num2, stores the result of the operation 72/2
+# # num2=72/2
+# # # Inside num3, store the value 48
+# # num3=48
+# # # Check if num1 is greater than num2, or less than num3. Store the result of that comparison in a variable called my_bool.
+# # my_bool=num1>num2 or num1<num3
+# # print(my_bool)
+
+# # # Logical Operators Practice #3
+# # # Check if the words:
+
+# # # word1 = "success", and
+
+# # # word2 = "technology"
+
+# # # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
+
+# # # "When something is important enough, you do it even if the odds are against you" - Elon Musk
+# # word1 = "success"
+# # word2 = "technology"
+# # sentence="When something is important enough, you do it even if the odds are against you"
+# # my_bool=(word1 not in sentence) or (word2 not in sentence)
 
-my_bool='white' == 'White'.lower()
-print(my_bool)
-
-my_bool= 4<5 and 5>6
-print(my_bool)
-# Comparison Operators Practice 1:
-# ask the user for their age
-# if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
-age=int(input("How old are you?"))
-if age >= 18 and age <= 21:
-  print("You can vote")
-else:
-  print("Better luck next time")
 
 
+# # ########################################decision making in python####################################
+# # # lessons
 
-# Comparison Operators Practice  2:
-# Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
-num1=36
-num2=17
-my_bool=num1 >= num2
-print(my_bool)
+# # if 5==2:
+# #   print("it is correct")
+# # else:
+# #   print("it is not correct")
+
+# # pet="dog"
+# # if pet =="cat":
+# #   print("you have a cat")
+# # elif pet == "dog":
+# #   print("you have a dog")
+# # else:
+# #   print("Idk")
 
-
-# Comparison Operators Practice  3:
-# Create two variables (num1 and num2):
-# Inside num1, store the result of the square root of 25
-# Inside num2, store the number 5.
-# Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
-import math
-num1=math.sqrt(25)
-num2=5
-my_bool=num1==num2
-print(my_bool)
-
-# Comparison Operators Practice #4:
-# Create two variables (num1 and num2):
-
-# Inside num1, store the result of 64 x 3
-num1=64*3
-# Inside num2, store the result of 24 x 8
-num2=24*8
-# Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
-my_bool=num1==num2
-print(my_bool)
-
-
-
-
-
-
-##############################logical operators##################################################
-# logical operators lesson
-my_bool=(55==10)and(5==2*3)
-print(my_bool)
-
-my_bool=1==10 or 3==3
-print(my_bool)
-
-text="this sentence is short"
-my_bool=('sentence' in text) and ('short' in text)
-print(my_bool)
-# Logical Operators Practice #1
-# Create three variables (num1, num2, and num3):
-
-# Inside num1, store the value 36
-num1=36
-# Inside num2, stores the result of the operation 72/2
-num2=72/2
-# Inside num3, store the value 48
-num3=48
-# Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
-my_bool=num1>num2 and num1<num3
-print(my_bool)
-
-
-
-# Logical Operators Practice #2
-# Create three variables (num1, num2, and num3):
-
-# Inside num1, store the value 36
-num1 = 36
-# Inside num2, stores the result of the operation 72/2
-num2=72/2
-# Inside num3, store the value 48
-num3=48
-# Check if num1 is greater than num2, or less than num3. Store the result of that comparison in a variable called my_bool.
-my_bool=num1>num2 or num1<num3
-print(my_bool)
-
-# Logical Operators Practice #3
-# Check if the words:
-
-# word1 = "success", and
-
-# word2 = "technology"
-
-# are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
-
-# "When something is important enough, you do it even if the odds are against you" - Elon Musk
-word1 = "success"
-word2 = "technology"
-sentence="When something is important enough, you do it even if the odds are against you"
-my_bool=(word1 not in sentence) or (word2 not in sentence)
-
-
-
-########################################decision making in python#####################################
-
-
-
-# Decision Making Practice #1
-# Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
-num1=input("Give me a number please")
-num2=input("Give me one more number please")
-# "num1 is greater than num2"
-
-# "num2 is greater than num1"
-
-# "num1 and num2 are equal"
-
-# You must display the value of the user input instead of num1 and num2.
-# num1 = input("Enter a number:")
-# num2 = input("Enter another number:")
-
-# f"{num1} is greater than {num2}"
-# "num2 is greater than num1"
-# "num1 and num2 are equal"
-print(f"{num1} is greater than {num2}")
-print(f"{num2} is greather than {num1}")
-print(f"{num1} is equal to {num2}")
-# Decision Making Practice #2
-# The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
-
-# Create a conditional structure to check if a 16-year-old without a license can drive, and display the corresponding result on the screen:
-
-# "You can drive"
-
-# "You can't drive yet. You must be 18 years old and have a license"
-
-# "You can't drive. You need to have a license"
-
-# Use the code base already provided to set up the appropriate flow control structure and check those conditions.
-age = 16
-has_license = False
-if age >=18 and has_license = True:
-  print("you can drive")
-else:
-  print("You can't drive yet.")
-
-
-# Decision Making Practice #3
-# To access a certain job, the candidate must be able to program in Python and speak French.
-
-# Create a conditional structure to evaluate a candidate given these conditions, and display the corresponding message on the screen:
-
-# "You meet the requirements to apply"
-
-# "To apply, you need to know how to program in Python and speak French"
-
-# "To apply, you need to speak French"
-
-# "To apply, you need to know how to program in Python"
-
-# Use the code already provided to set up the appropriate flow control structure and check those conditions. Evaluate a candidate who knows French, but does not know how to program in Python.
-
-
-speak_french = True
-knows_python = False
-
-"You meet the requirements to apply"
-
-"To apply, you need to know how to program in Python and speak French"
-
-"To apply, you need to speak French"
-
-"To apply, you need to know how to program in Python"
-
-
-# Decision Making Practice #4
-# Enter your name
-
-# Enter your relatives name
-# Enter your age
-
-# If age is less than 20 print i am young
-
-# If age is less than 30 then print iam vicenarian
-
-# If age is less than 40 then print i am a tricenarian
-
-# If age is less than 50 then print I am quadragenarian
+# # age=16
+# # schoolGrade=9
+# # if age<18:
+# #   print("you are a minor")
+# #   if schoolGrade >= 7:
+# #     print("passed")
+# #   else:("passed")
+# # else:
+# #   print("you are an adult")
+
+# # name=input("What is your name?")
+# # rname=input("What is your relatives name?")
+# # age=int(input("How old are you?"))
+
+# # if age < 20:
+# #   print("I am young")
+# # elif age > 20 and age  < 30:
+# #   print("I am vicenarian")
+# # elif age > 30 and age  < 40:
+# #   print("I am a tricenarian")
+# # elif age > 40 and age  < 50:
+# #  print("I am quadragenarian")
+# # else:
+# #   print("I am old")
+
+# # Decision Making Practice #1
+# # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
+# num1=input("Give me a number please")
+# num2=input("Give me one more number please")
+# # "num1 is greater than num2"
+
+# # "num2 is greater than num1"
+
+# # "num1 and num2 are equal"
+
+# # You must display the value of the user input instead of num1 and num2.
+# # num1 = input("Enter a number:")
+# # num2 = input("Enter another number:")
+
+# # f"{num1} is greater than {num2}"
+# # "num2 is greater than num1"
+# # "num1 and num2 are equal"
+# print(f"{num1} is greater than {num2}")
+# print(f"{num2} is greather than {num1}")
+# print(f"{num1} is equal to {num2}")
+# # Decision Making Practice #2
+# # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
+
+# # Create a conditional structure to check if a 16-year-old without a license can drive, and display the corresponding result on the screen:
+
+# # "You can drive"
+
+# # "You can't drive yet. You must be 18 years old and have a license"
+
+# # "You can't drive. You need to have a license"
+
+# # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
+# age = 16
+# has_license = False
+# if age >= 18 and has_license == True:
+#   print("You can drive")
+# elif age < 18 and has_license == False:
+#   print("You can't drive yet. You must be 18 years old and have a license")
+# elif age >= 18 and has_license == False:
+#   print("You can't drive. You need to have license")
+
+
+# # Decision Making Practice #3
+# # To access a certain job, the candidate must be able to program in Python and speak French.
+
+# # Create a conditional structure to evaluate a candidate given these conditions, and display the corresponding message on the screen:
+
+# # "You meet the requirements to apply"
+
+# # "To apply, you need to know how to program in Python and speak French"
+
+# # "To apply, you need to speak French"
+
+# # "To apply, you need to know how to program in Python"
+
+# # Use the code already provided to set up the appropriate flow control structure and check those conditions. Evaluate a candidate who knows French, but does not know how to program in Python.
+
+
+# speak_french = True
+# knows_python = False
+# if speak_french == True and knows_python == True:
+#   print("You meet the requirements to apply")
+# elif speak_french == False and knows_python == False:
+#   print("To apply, you need to know how to program in Python and speak French")
+# elif speak_french == False and knows_python == True:
+#   print("To apply, you need to speak French")
+# elif speak_french == True and knows_python == False:
+#   print("To apply, you need to know how to program in Python")
+
+
+# # Decision Making Practice #4
+# # Enter your name
+
+# # Enter your relatives name
+# # Enter your age
+# name=input("What is your name?")
+# rname=input("What is your relatives name?")
+# age=int(input("How old are you?"))
+
+# if age < 20:
+#   print("I am young")
+# elif age > 20 and age  < 30:
+#   print("I am vicenarian")
+# elif age > 30 and age  < 40:
+#   print("I am a tricenarian")
+# elif age > 40 and age  < 50:
+#  print("I am quadragenarian")
+# else:
+#   print("I am old")
 
 
 
@@ -242,7 +283,15 @@ knows_python = False
 #what is iteration?
 #what are for loops?
 
+names = ['John','Ann','Chad','Lee']
 
+for item in names:
+  print(f"Hello {item}")
+
+my_list = ['a','b','c','d']
+for letter in my_list:
+  letter_number=my_list.index(letter) +1
+  print(f"letter {letter_number}: {letter}")
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
 
