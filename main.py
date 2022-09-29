@@ -1,4 +1,4 @@
-# # fork the repl.it and create a new git hub repo entitled 
+# # fork the repl.it and create a new git hub repo entitled
 # #Comparison operators
 # # Logical operators
 # # Decision making
@@ -7,10 +7,8 @@
 # # Random in python
 # # List comprehension
 
-
 # # review practice
 # # Append the value of current to the end of the list seconds Please use the list.append() method to do that.
-
 
 # seconds = [1.23, 1.45, 1.02]
 # current = 1.11
@@ -25,7 +23,6 @@
 # seconds = [1.23, 1.45, 1.02, 1.11]
 # second = seconds[0]
 # print(second)
-
 
 # ################################comparison operators#########################
 # #remember....
@@ -56,15 +53,12 @@
 # else:
 #   print("Better luck next time")
 
-
-
 # # Comparison Operators Practice  2:
 # # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
 # num1=36
 # num2=17
 # my_bool=num1 >= num2
 # print(my_bool)
-
 
 # # Comparison Operators Practice  3:
 # # Create two variables (num1 and num2):
@@ -87,7 +81,6 @@
 # # Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
 # my_bool=num1==num2
 # print(my_bool)
-
 
 # ##############################logical operators##################################################
 # # logical operators lesson
@@ -112,8 +105,6 @@
 # # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
 # my_bool=num1>num2 and num1<num3
 # print(my_bool)
-
-
 
 # # # Logical Operators Practice #2
 # # # Create three variables (num1, num2, and num3):
@@ -142,8 +133,6 @@
 # # word2 = "technology"
 # # sentence="When something is important enough, you do it even if the odds are against you"
 # # my_bool=(word1 not in sentence) or (word2 not in sentence)
-
-
 
 # # ########################################decision making in python####################################
 # # # lessons
@@ -227,7 +216,6 @@
 # elif age >= 18 and has_license == False:
 #   print("You can't drive. You need to have license")
 
-
 # # Decision Making Practice #3
 # # To access a certain job, the candidate must be able to program in Python and speak French.
 
@@ -243,7 +231,6 @@
 
 # # Use the code already provided to set up the appropriate flow control structure and check those conditions. Evaluate a candidate who knows French, but does not know how to program in Python.
 
-
 # speak_french = True
 # knows_python = False
 # if speak_french == True and knows_python == True:
@@ -254,7 +241,6 @@
 #   print("To apply, you need to speak French")
 # elif speak_french == True and knows_python == False:
 #   print("To apply, you need to know how to program in Python")
-
 
 # # Decision Making Practice #4
 # # Enter your name
@@ -276,46 +262,57 @@
 # else:
 #   print("I am old")
 
-
-
 ###################################loops intro######################################
 # queue videos
 #what is iteration?
 #what are for loops?
 
-names = ['John','Ann','Chad','Lee']
+names = ['John', 'Ann', 'Chad', 'Lee']
 
 for item in names:
-  print(f"Hello {item}")
+    print(f"Hello {item}")
 
-my_list = ['a','b','c','d']
+my_list = ['a', 'b', 'c', 'd']
 for letter in my_list:
-  letter_number=my_list.index(letter) +1
-  print(f"letter {letter_number}: {letter}")
+    letter_number = my_list.index(letter) + 1
+    print(f"letter {letter_number}: {letter}")
+
+my_list=['paul','laura','jacob','louis','julia']
+
+for name in my_list:
+  if name.startswith("l"):
+    print(name)
+  else:
+    print("this name does not begin with l")
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
 
 # For example: "Hello Norville"
 
 students = ["Norville", "Fred", "Velma", "Daphne"]
-
-
-
-
+for student in students:
+  print(f"Hello {student}")
 # For Loops Practice #2
 # Given the following list of numbers, calculate the sum of all the numbers using For loops and store the result of the sum in a variable called sum_numbers:
 
-list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
-# sum_numbers = 
 
 
+list_numbers = [
+    1, 5, 8, 7, 6, 8, 2, 5, 2, 6, 4, 8, 5, 9, 8, 3, 5, 4, 2, 5, 6, 4
+]
 
+print(sum(list_numbers[0:-1]))
 
-
+# sum_numbers =
+for numbers in list_numbers:
+  sum_numbers=numbers+numbers
+  print(sum_numbers)
 # For Loops Practice #3
 # Given the following list of numbers, perform the sum of all even and odd* numbers separately in the variables sum_even and sum_odd respectively:
 
-list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
+list_numbers = [
+    1, 5, 8, 7, 6, 8, 2, 5, 2, 6, 4, 8, 5, 9, 8, 3, 5, 4, 2, 5, 6, 4
+]
 
 # *Recall from previous days: the modulus (or remainder) of a number divided by 2 is zero when said value is even, and 1 when it is odd
 
@@ -323,14 +320,13 @@ list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
 
 # num % 2 == 1 (odd values)
 
-list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
+list_numbers = [
+    1, 5, 8, 7, 6, 8, 2, 5, 2, 6, 4, 8, 5, 9, 8, 3, 5, 4, 2, 5, 6, 4
+]
 
-# sum_even = 
+# sum_even =
 
-# sum_odd = 
-
-
-
+# sum_odd =
 
 ########################################loops############################################################
 # while Loops
@@ -348,12 +344,11 @@ list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
 #queue video about loops
 i = 1
 while i < 10:
-  print(i)
-  i = i + 1
-  # or i += 1
+    print(i)
+    i = i + 1
+    # or i += 1
 
 print("done with loop")
-
 
 # we can use a while loop to continually ask the user to guess a word until they guess it correctly
 # secret_word ="giraffe"
@@ -364,13 +359,10 @@ print("done with loop")
 
 # print("you win")
 
-
 # While Loops Practice #1
 # Create a While Loop that prints the numbers 10 to 0 on the screen, one at a time.
 
 number = 10
-
-
 
 # While Loops Practice #2
 # Create a While Loop that subtracts one by one the numbers from 50 to 0 (both numbers included) with the following additional conditions:
@@ -381,8 +373,6 @@ number = 10
 
 number = 50
 
-
-
 # Loop Interruption Statements Practice
 # Create a For loop through the following list of numbers, printing each of its elements to the screen, and interrupt the flow when you find a negative value:
 
@@ -390,10 +380,9 @@ number = 50
 
 # You must not change the order of the list.
 
-list_numbers = [4,5,8,7,6,9,8,2,4,5,7,1,9,5,6,-1,-5,6,-6,-4,-3]
-
-
-
+list_numbers = [
+    4, 5, 8, 7, 6, 9, 8, 2, 4, 5, 7, 1, 9, 5, 6, -1, -5, 6, -6, -4, -3
+]
 
 ##############################dictionaries and loops##############################################
 #We've been learning about sequences in Python but now we're going to switch gears and learn about mappings in Python. If you're familiar with other languages you can think of these Dictionaries as hash tables.
@@ -409,29 +398,27 @@ list_numbers = [4,5,8,7,6,9,8,2,4,5,7,1,9,5,6,-1,-5,6,-6,-4,-3]
 
 # A Python dictionary consists of a key and then an associated value. That value can be almost any Python object.
 
-
 #sample dictionary
 monthConversions = {
-    "JAN" : "January",
-    "Feb" : "February",
-    "Mar" : "March",
-    "Apr" : "April",
-    "May" : "May",
+    "JAN": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
     "Jun": "June",
-    "Jul" : "July",
-    "Aug" : "August",
-    "Sep" : "September",
-    "Oct"  : "October"
-
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October"
 }
 print(monthConversions["Sep"])
 #add more months
-monthConversions['Nov'] ="November"
+monthConversions['Nov'] = "November"
 monthConversions['Dec'] = "December"
 print(monthConversions)
 #print(monthConversions.keys())
 # so structure of a dictionary
- #is the title of the dictionary = {"key": "value"}
+#is the title of the dictionary = {"key": "value"}
 
 # challenge 1
 #how do we get data from our dictionary?
@@ -440,30 +427,16 @@ print(monthConversions)
 #call the dictionary favActors_Movies
 # call the dictionary twice finding at least two movies
 
-
-
-
-
-
-
-
-
 ##############################ranges#####################################################
 
 # Range Practice #1
 # Create a list consisting of all the numbers from 2500 to 2585 (inclusive). Store this list in the variable my_list.
 
-
-
 # Range Practice #2
 # Using the range() function, create in a single line of code a list consisting of all numbers that are multiples of 3 from 3 to 300 (inclusive). Store this list in the variable my_list.
 
-
-
 # Range Practice #3
 # Use the range() function and a loop to add the squares of all the numbers from 1 to 15 (inclusive). Store the result in a variable called sum_squares.
-
-
 
 # For this purpose:
 
@@ -472,7 +445,5 @@ print(monthConversions)
 # For each of these values, find its squared value (power of 2). You may need to create intermediate variables (optionally).
 
 # Sum all the squared values obtained. Accumulate the sum in the variable sum_squares.
-
-
 
 ##############################enumerators in python #####################################################
